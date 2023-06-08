@@ -1,0 +1,16 @@
+# Compile of css.vhdl was successful.
+vsim -gui work.tb(bhv)
+# vsim -gui work.tb(bhv) 
+# Start time: 00:29:57 on Jun 08,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb(bhv)
+# Loading work.css(bhv)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb/dut/*
+run
+run
+run
+# End time: 00:30:53 on Jun 08,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 2
