@@ -1,9 +1,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity tb is end;
+entity testbench is end;
 
-architecture bhv of tb is
+architecture bhv of testbench is
     signal req0: std_logic;
     signal req1: std_logic;
     signal req2: std_logic;
@@ -71,22 +71,34 @@ begin
         );
 
     process begin
-        req0 <= '1';
+        req0 <= '0';
         req1 <= '0';
         req2 <= '0';
         req3 <= '0';
 
         wait for 100 ns;
+
+        req0 <= '1';
+        req3 <= '1';
+
+        wait until sig0_in = '1';
+        wait for 100 ns;
         req0 <= '0';
 
-        wait for 100 ns;
-
-        req1 <= '1';
-        req3 <= '1';
-        wait for 100 ns;
-        req1 <= '0';
+        wait until sig3_in = '1';
         wait for 100 ns;
         req3 <= '0';
+
+        req1 <= '1';
+        wait until sig1_in = '1';
+        wait for 100 ns;
+        req1 <= '0';
+
+        req2 <= '1';
+        
+        wait until sig2_in = '1';
+        wait for 100 ns;
+        req2 <= '0';
 
         wait;
 

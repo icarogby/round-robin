@@ -3,13 +3,10 @@ use ieee.std_logic_1164.all;
 
 entity css is
     port(
-        clk, rst: in std_logic;
-
         req0: in std_logic;
         sig0_in: out std_logic;
         sig0_out: in std_logic;
 
-        
         req1: in std_logic;
         sig1_in: out std_logic;
         sig1_out: in std_logic;
@@ -30,9 +27,10 @@ entity css is
 end css;
 
 architecture bhv of css is
-    signal priority: std_logic_vector(1 downto 0);
+    signal priority: integer := 0;
+    signal served: integer := 0;
     
-    signal reqs: std_logic_vector(0 to 3) =: "0000";
+    signal reqs: std_logic_vector(0 to 3);
     signal sigs_in: std_logic_vector(0 to 3);
     signal sigs_out: std_logic_vector(0 to 3);
 
@@ -52,32 +50,52 @@ begin
             sigs_in(priority) <= esig_out;
             esig_in <= sigs_out(priority);
 
+            sigs_in((priority + 1) mod 4) <= '0';
+            sigs_in((priority + 2) mod 4) <= '0';
+            sigs_in((priority + 3) mod 4) <= '0';
+
+            served <= priority;
+
         elsif (reqs((priority + 1) mod 4) = '1') then
             sigs_in((priority + 1) mod 4) <= esig_out;
             esig_in <= sigs_out((priority + 1) mod 4);
+
+            sigs_in((priority + 2) mod 4) <= '0';
+            sigs_in((priority + 3) mod 4) <= '0';
+            sigs_in(priority)             <= '0';
+
+            served <= (priority + 1) mod 4;
 
         elsif (reqs((priority + 2) mod 4) = '1') then
             sigs_in((priority + 2) mod 4) <= esig_out;
             esig_in <= sigs_out((priority + 2) mod 4);
 
+            sigs_in((priority + 3) mod 4) <= '0';
+            sigs_in(priority)             <= '0';
+            sigs_in((priority + 1) mod 4) <= '0';
+
+            served <= (priority + 2) mod 4;
+
         elsif (reqs((priority + 3) mod 4) = '1') then
             sigs_in((priority + 3) mod 4) <= esig_out;
             esig_in <= sigs_out((priority + 3) mod 4);
+
+            sigs_in(priority)             <= '0';
+            sigs_in((priority + 1) mod 4) <= '0';
+            sigs_in((priority + 2) mod 4) <= '0';
+
+            served <= (priority + 3) mod 4;
 
         end if;
 
     end process round_process;
 
-    wr: process begin
-        if (rst = '1') then
-            priority <= "00";
-        
-        elsif ((req0'event) and (req0 = '0')) or ((req1'event) and (req1 = '0')) or ((req2'event) and (req2 = '0'))  or ((req3'event) and (req3 = '0')) and ((clk'event) and (clk = '1')) then
+    process begin
+        if (served'event) then
             priority <= (priority + 1) mod 4;
-        
         end if;
-
-        wait on req0, req1, req2, req3;
-    end process wr;
+        
+        wait on served;
+    end process;
 
 end bhv;
