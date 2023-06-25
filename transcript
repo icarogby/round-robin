@@ -1,262 +1,675 @@
-# Compile of css.vhdl failed with 41 errors.
-# Compile of tb.vhdl was successful.
-# 2 compiles, 1 failed with 41 errors.
-# Compile of css.vhdl failed with 41 errors.
-# Compile of tb.vhdl was successful.
-# 2 compiles, 1 failed with 41 errors.
-# Compile of css.vhdl failed with 32 errors.
-# Compile of tb.vhdl was successful.
-# 2 compiles, 1 failed with 32 errors.
-# Compile of css.vhdl failed with 32 errors.
-# Compile of tb.vhdl was successful.
-# 2 compiles, 1 failed with 32 errors.
-# Compile of css.vhdl failed with 2 errors.
-# Compile of tb.vhdl was successful.
-# 2 compiles, 1 failed with 2 errors.
+# Reading pref.tcl
+# OpenFile C:/Users/icaro/Documents/GitHub/round-robin/css.mpf
+# Loading project css
 # Compile of css.vhdl failed with 1 errors.
-# Compile of tb.vhdl was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of css.vhdl failed with 1 errors.
-# Compile of css.vhdl failed with 1 errors.
-# Compile of css.vhdl failed with 1 errors.
-# Compile of tb.vhdl was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of css.vhdl failed with 1 errors.
-# Compile of tb.vhdl was successful.
-# 2 compiles, 1 failed with 1 error.
+# Compile of testbench.vhdl failed with 18 errors.
+# 2 compiles, 2 failed with 19 errors.
+# Compile of css.vhdl failed with 38 errors.
+# Compile of testbench.vhdl failed with 18 errors.
+# 2 compiles, 2 failed with 56 errors.
+# Compile of css.vhdl failed with 9 errors.
+# Compile of css.vhdl failed with 8 errors.
+# Compile of css.vhdl failed with 8 errors.
+# Compile of css.vhdl failed with 8 errors.
 # Compile of css.vhdl was successful.
-# Compile of tb.vhdl was successful.
+# Compile of testbench.vhdl failed with 18 errors.
+# Compile of testbench.vhdl failed with 16 errors.
+# Compile of testbench.vhdl failed with 10 errors.
+# Compile of testbench.vhdl failed with 7 errors.
+# Compile of testbench.vhdl failed with 6 errors.
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+vsim -gui work.tb(bhv)
+# vsim -gui work.tb(bhv) 
+# Start time: 17:07:13 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb(bhv)
+# Loading work.css(bhv)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "sig0_in".
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl Line: 11
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:07:14 on Jun 24,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 15
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbench(bhv)
+# vsim -gui work.testbench(bhv) 
+# Start time: 17:09:55 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(bhv)
+# Loading work.css(bhv)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint  \
+sim:/testbench/dut/priority
+add wave -position insertpoint  \
+sim:/testbench/dut/reqs
+add wave -position insertpoint  \
+sim:/testbench/dut/a \
+sim:/testbench/dut/b \
+sim:/testbench/dut/c \
+sim:/testbench/dut/d \
+sim:/testbench/dut/a2 \
+sim:/testbench/dut/b2 \
+sim:/testbench/dut/c2 \
+sim:/testbench/dut/d2
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 300 ns ###############
+#       Signal: /testbench/dut/reqs @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:30)
+#   Active process: /testbench/dut/line__105 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__113 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__117 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__121 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__125 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/change @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#       Signal: /testbench/dut/priority @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:29)
+#       Signal: /testbench/dut/sig3_mid @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:34)
+#       Signal: /testbench/dut/sig2_mid @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:34)
+#   Active process: /testbench/dut/line__39 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__46 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__53 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__60 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__74 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__81 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__88 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__95 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__130 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__137 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__144 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__151 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#       Signal: /testbench/sig2_in @ sub-iteration 4 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:14)
+#       Signal: /testbench/sig0_in @ sub-iteration 4 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:12)
+#       Signal: /testbench/dut/c @ sub-iteration 4 at Value X (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:32)
+#       Signal: /testbench/dut/b @ sub-iteration 4 at Value Z (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:32)
+#   Active process: /testbench/dut/line__68 @ sub-iteration 5
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#   Active process: /testbench/dut/line__69 @ sub-iteration 5
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#       Signal: /testbench/dut/c2 @ sub-iteration 6 at Value X (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:32)
+#       Signal: /testbench/dut/b2 @ sub-iteration 6 at Value Z (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:32)
+#   Active process: /testbench/dut/line__102 @ sub-iteration 7
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:70
+#       Signal: /testbench/dut/reqs @ sub-iteration 8 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:30)
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+quit -sim
+# End time: 17:12:48 on Jun 24,2023, Elapsed time: 0:02:53
+# Errors: 9, Warnings: 2
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.tb(bhv)
 # vsim -gui work.tb(bhv) 
-# Start time: 11:29:06 on Jun 09,2023
+# Start time: 17:16:24 on Jun 24,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.tb(bhv)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
 # Loading work.css(bhv)
-# ** Fatal: (vsim-3817) Port "clk" of entity "css" is not in the component being instantiated.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl Line: 8
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "sig0_in".
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl Line: 11
 # FATAL ERROR while loading design
 # Error loading design
-# End time: 11:29:07 on Jun 09,2023, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 12
-# Break key hit
-# Break key hit
+# End time: 17:16:24 on Jun 24,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
 vsim -gui work.tb(bhv)
 # vsim -gui work.tb(bhv) 
-# Start time: 11:29:28 on Jun 09,2023
+# Start time: 17:16:40 on Jun 24,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.tb(bhv)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
 # Loading work.css(bhv)
-# ** Fatal: (vsim-3817) Port "clk" of entity "css" is not in the component being instantiated.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl Line: 8
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "sig0_in".
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl Line: 11
 # FATAL ERROR while loading design
 # Error loading design
-# End time: 11:29:29 on Jun 09,2023, Elapsed time: 0:00:01
+# End time: 17:16:40 on Jun 24,2023, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 1
 # Compile of css.vhdl was successful.
-# Compile of tb.vhdl was successful.
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.tb(bhv)
 # vsim -gui work.tb(bhv) 
-# Start time: 11:32:31 on Jun 09,2023
+# Start time: 17:17:29 on Jun 24,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.tb(bhv)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
+# Loading work.css(bhv)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "sig0_in".
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl Line: 11
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:17:30 on Jun 24,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb(bhv)
+# vsim -gui work.tb(bhv) 
+# Start time: 17:18:57 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb(bhv)
+# Loading work.css(bhv)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "sig0_in".
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl Line: 11
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:18:57 on Jun 24,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+vsim -gui work.testbench(bhvt)
+# vsim -gui work.testbench(bhvt) 
+# Start time: 17:21:29 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(bhvt)
 # Loading work.css(bhv)
 # WARNING: No extended dataflow license exists
 add wave -position insertpoint  \
-sim:/tb/clk_count
+sim:/testbench/req0 \
+sim:/testbench/req1 \
+sim:/testbench/req2 \
+sim:/testbench/req3 \
+sim:/testbench/sig0_in \
+sim:/testbench/sig1_in \
+sim:/testbench/sig2_in \
+sim:/testbench/sig3_in \
+sim:/testbench/sig0_out \
+sim:/testbench/sig1_out \
+sim:/testbench/sig2_out \
+sim:/testbench/sig3_out \
+sim:/testbench/esig_in \
+sim:/testbench/esig_out
 add wave -position insertpoint  \
-sim:/tb/clk
+sim:/testbench/dut/sig0_mid \
+sim:/testbench/dut/sig1_mid \
+sim:/testbench/dut/sig2_mid \
+sim:/testbench/dut/sig3_mid
 add wave -position insertpoint  \
-sim:/tb/rst
-add wave -position insertpoint sim:/tb/dut/*
+sim:/testbench/dut/served
+add wave -position insertpoint  \
+sim:/testbench/dut/priority
 run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 100 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 100 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 100 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 100 ns  Iteration: 2  Instance: /tb/dut
 run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 3  Instance: /tb/dut
 run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 300 ns  Iteration: 3  Instance: /tb/dut
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 300 ns ###############
+#       Signal: /testbench/dut/sig1_mid @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:35)
+#       Signal: /testbench/dut/sig0_mid @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:35)
+#       Signal: /testbench/dut/served @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:31)
+#   Active process: /testbench/dut/change @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__138 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__145 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__152 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__159 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/sig2_in @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:14)
+#       Signal: /testbench/sig1_in @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:13)
+#       Signal: /testbench/dut/priority @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:29)
+#   Active process: /testbench/dut/line__40 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__47 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__54 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__61 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__75 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__82 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__89 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__96 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__138 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
 run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 400 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 400 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 400 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 400 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 400 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 400 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 400 ns  Iteration: 2  Instance: /tb/dut
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 400 ns  Iteration: 2  Instance: /tb/dut
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
 run
-# End time: 11:35:45 on Jun 09,2023, Elapsed time: 0:03:14
-# Errors: 0, Warnings: 86
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+quit -sim
+# End time: 17:31:16 on Jun 24,2023, Elapsed time: 0:09:47
+# Errors: 4, Warnings: 3
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbench(bhvt)
+# vsim -gui work.testbench(bhvt) 
+# Start time: 17:31:27 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(bhvt)
+# Loading work.css(bhv)
+add wave -position insertpoint sim:/testbench/*
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 300 ns ###############
+#       Signal: /testbench/sig1_in @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:13)
+#       Signal: /testbench/sig0_in @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:12)
+#       Signal: /testbench/dut/served @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:31)
+#   Active process: /testbench/dut/change @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/priority @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:29)
+#   Active process: /testbench/dut/line__40 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__47 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__54 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__61 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__75 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__82 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__89 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__96 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/d @ sub-iteration 4 at Value Z (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:33)
+#       Signal: /testbench/dut/a @ sub-iteration 4 at Value X (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:33)
+#   Active process: /testbench/dut/line__68 @ sub-iteration 5
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__71 @ sub-iteration 5
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/d2 @ sub-iteration 6 at Value Z (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:33)
+#       Signal: /testbench/dut/a2 @ sub-iteration 6 at Value X (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:33)
+#   Active process: /testbench/dut/line__103 @ sub-iteration 7
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/reqs @ sub-iteration 8 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:30)
+#   Active process: /testbench/dut/line__106 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__113 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__121 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__125 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__129 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__133 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/sig3_in @ sub-iteration 10 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:15)
+#       Signal: /testbench/sig0_in @ sub-iteration 10 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:12)
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+quit -sim
+# End time: 17:34:11 on Jun 24,2023, Elapsed time: 0:02:44
+# Errors: 5, Warnings: 2
+vsim -gui work.testbench(bhvt)
+# vsim -gui work.testbench(bhvt) 
+# Start time: 17:34:54 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(bhvt)
+# Loading work.css(bhv)
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint  \
+sim:/testbench/dut/priority
+add wave -position insertpoint  \
+sim:/testbench/dut/served
+add wave -position insertpoint  \
+sim:/testbench/dut/reqs
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 300 ns ###############
+#       Signal: /testbench/sig1_in @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:13)
+#       Signal: /testbench/sig0_in @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:12)
+#       Signal: /testbench/dut/served @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:31)
+#   Active process: /testbench/dut/change @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/priority @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:29)
+#   Active process: /testbench/dut/line__40 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__47 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__54 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__61 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__75 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__82 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__89 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__96 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/d @ sub-iteration 4 at Value Z (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:33)
+#       Signal: /testbench/dut/a @ sub-iteration 4 at Value X (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:33)
+#   Active process: /testbench/dut/line__68 @ sub-iteration 5
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__71 @ sub-iteration 5
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/d2 @ sub-iteration 6 at Value Z (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:33)
+#       Signal: /testbench/dut/a2 @ sub-iteration 6 at Value X (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:33)
+#   Active process: /testbench/dut/line__103 @ sub-iteration 7
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/reqs @ sub-iteration 8 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:30)
+#   Active process: /testbench/dut/line__106 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__113 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__121 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__125 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__129 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__133 @ sub-iteration 9
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/sig3_in @ sub-iteration 10 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:15)
+#       Signal: /testbench/sig0_in @ sub-iteration 10 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:12)
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+quit -sim
+# End time: 17:38:17 on Jun 24,2023, Elapsed time: 0:03:23
+# Errors: 6, Warnings: 1
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbench(bhvt)
+# vsim -gui work.testbench(bhvt) 
+# Start time: 17:38:30 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(bhvt)
+# Loading work.css(bhv)
+add wave -position insertpoint  \
+sim:/testbench/req0 \
+sim:/testbench/req1 \
+sim:/testbench/req2 \
+sim:/testbench/req3 \
+sim:/testbench/sig0_in \
+sim:/testbench/sig1_in \
+sim:/testbench/sig2_in \
+sim:/testbench/sig3_in \
+sim:/testbench/sig0_out \
+sim:/testbench/sig1_out \
+sim:/testbench/sig2_out \
+sim:/testbench/sig3_out \
+sim:/testbench/esig_in \
+sim:/testbench/esig_out
+add wave -position insertpoint  \
+sim:/testbench/dut/priority
+add wave -position insertpoint  \
+sim:/testbench/dut/reqs
+add wave -position insertpoint  \
+sim:/testbench/dut/served
+run -continue
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 300 ns ###############
+#       Signal: /testbench/dut/sig1_mid @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:35)
+#       Signal: /testbench/dut/sig0_mid @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:35)
+#       Signal: /testbench/dut/served @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:31)
+#   Active process: /testbench/dut/change @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__138 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__145 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__152 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__159 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/sig2_in @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:14)
+#       Signal: /testbench/sig1_in @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:13)
+#       Signal: /testbench/dut/priority @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:29)
+#   Active process: /testbench/dut/line__40 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__47 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__54 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__61 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__75 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__82 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__89 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__96 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__138 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+quit -sim
+# End time: 17:43:04 on Jun 24,2023, Elapsed time: 0:04:34
+# Errors: 4, Warnings: 2
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbench(bhvt)
+# vsim -gui work.testbench(bhvt) 
+# Start time: 17:43:20 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(bhvt)
+# Loading work.css(bhv)
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint  \
+sim:/testbench/dut/priority
+add wave -position insertpoint  \
+sim:/testbench/dut/reqs
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 17:50:47 on Jun 24,2023, Elapsed time: 0:07:27
+# Errors: 0, Warnings: 2
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbench(bhvt)
+# vsim -gui work.testbench(bhvt) 
+# Start time: 17:50:59 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(bhvt)
+# Loading work.css(bhv)
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint  \
+sim:/testbench/dut/priority
+add wave -position insertpoint  \
+sim:/testbench/dut/served
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 300 ns ###############
+#       Signal: /testbench/dut/served @ sub-iteration 0 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:30)
+#   Active process: /testbench/dut/line__105 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__113 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__117 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__121 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__125 @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/change @ sub-iteration 1
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/priority @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:29)
+#       Signal: /testbench/dut/sig3_mid @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:34)
+#       Signal: /testbench/dut/sig2_mid @ sub-iteration 2 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:34)
+#   Active process: /testbench/dut/line__39 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__46 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__53 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__60 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__74 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__81 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__88 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__95 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__130 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__137 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__144 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__151 @ sub-iteration 3
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/sig2_in @ sub-iteration 4 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:14)
+#       Signal: /testbench/sig0_in @ sub-iteration 4 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:12)
+#       Signal: /testbench/dut/c @ sub-iteration 4 at Value X (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:32)
+#       Signal: /testbench/dut/b @ sub-iteration 4 at Value Z (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:32)
+#   Active process: /testbench/dut/line__68 @ sub-iteration 5
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#   Active process: /testbench/dut/line__69 @ sub-iteration 5
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/c2 @ sub-iteration 6 at Value X (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:32)
+#       Signal: /testbench/dut/b2 @ sub-iteration 6 at Value Z (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:32)
+#   Active process: /testbench/dut/line__102 @ sub-iteration 7
+#     Source: C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl:69
+#       Signal: /testbench/dut/served @ sub-iteration 8 at Value unknown (C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl:30)
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 300 ns.
+quit -sim
+# End time: 17:54:43 on Jun 24,2023, Elapsed time: 0:03:44
+# Errors: 1, Warnings: 2
+# Compile of css.vhdl failed with 2 errors.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of css.vhdl failed with 1 errors.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of css.vhdl was successful.
+# Compile of testbench.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbench(bhvt)
+# vsim -gui work.testbench(bhvt) 
+# Start time: 17:56:11 on Jun 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(bhvt)
+# Loading work.css(bhv)
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint  \
+sim:/testbench/dut/priority
+add wave -position insertpoint  \
+sim:/testbench/dut/served
+add wave -position insertpoint  \
+sim:/testbench/dut/reqs
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 17:57:01 on Jun 24,2023, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 4

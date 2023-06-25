@@ -10,125 +10,149 @@ z2
 cModel Technology
 dC:/Users/icaro/Meu Drive/UFPI/IC/COMETA 16/ModelSimProject
 Ecss
-Z0 w1686333371
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 174
-Z3 dC:/Users/icaro/Documents/GitHub/round-robin
-Z4 8C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl
-Z5 FC:/Users/icaro/Documents/GitHub/round-robin/css.vhdl
+Z0 w1687702098
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 405
+Z5 dC:/Users/icaro/Documents/GitHub/round-robin
+Z6 8C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl
+Z7 FC:/Users/icaro/Documents/GitHub/round-robin/css.vhdl
 l0
-L4 1
-V4hEb;z9a3RTRoL78VfjCG1
-!s100 808zM7UTGD30Lh7;fBjLU3
-Z6 OV;C;2020.1;71
+L5 1
+V?aR?29hkTgQ0?QXH]eAQU0
+!s100 Xl@zaLdm<zLSQ_EFC2bO=1
+Z8 OV;C;2020.1;71
 33
-Z7 !s110 1686334361
+Z9 !s110 1687702101
 !i10b 1
-Z8 !s108 1686334361.000000
-Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl|
-Z10 !s107 C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl|
+Z10 !s108 1687702101.000000
+Z11 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl|
+Z12 !s107 C:/Users/icaro/Documents/GitHub/round-robin/css.vhdl|
 !i113 1
-Z11 o-work work -2008 -explicit
-Z12 tExplicit 1 CvgOpt 0
+Z13 o-work work -2008 -explicit
+Z14 tExplicit 1 CvgOpt 0
 Abhv
 R1
 R2
-DEx4 work 3 css 0 22 4hEb;z9a3RTRoL78VfjCG1
-!i122 174
-l37
-L29 73
-VMlmQHg^c0YWCb<a8>LR652
-!s100 LW`UC1ioUFCf=DUC>EQ@?3
-R6
-33
-R7
-!i10b 1
+R3
+R4
+DEx4 work 3 css 0 22 ?aR?29hkTgQ0?QXH]eAQU0
+!i122 405
+l42
+L31 129
+VGl;DSKBI0FD3AhXK=H4We1
+!s100 5ljE>30U6o1AUzD5SBcd80
 R8
+33
 R9
+!i10b 1
 R10
-!i113 1
 R11
 R12
+!i113 1
+R13
+R14
 Etb
-Z13 w1686330775
-R1
-R2
-!i122 154
+Z15 w1686330775
 R3
-Z14 8C:/Users/icaro/Documents/GitHub/round-robin/tb.vhdl
-Z15 FC:/Users/icaro/Documents/GitHub/round-robin/tb.vhdl
+R4
+!i122 154
+R5
+Z16 8C:/Users/icaro/Documents/GitHub/round-robin/tb.vhdl
+Z17 FC:/Users/icaro/Documents/GitHub/round-robin/tb.vhdl
 l0
 L4 1
 VheijMe_mC1?NSC7AD_3:`1
 !s100 6Y@GIaF8G]APEe3mH:R8g0
-R6
+R8
 33
-Z16 !s110 1686331865
+Z18 !s110 1686331865
 !i10b 1
-Z17 !s108 1686331865.000000
-Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/icaro/Documents/GitHub/round-robin/tb.vhdl|
-Z19 !s107 C:/Users/icaro/Documents/GitHub/round-robin/tb.vhdl|
+Z19 !s108 1686331865.000000
+Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/icaro/Documents/GitHub/round-robin/tb.vhdl|
+Z21 !s107 C:/Users/icaro/Documents/GitHub/round-robin/tb.vhdl|
 !i113 1
-R11
-R12
+R13
+R14
 Abhv
-R1
-R2
+R3
+R4
 DEx4 work 2 tb 0 22 heijMe_mC1?NSC7AD_3:`1
 !i122 154
 l50
 L6 95
 VW5cS0AEVjX:aT1l[j6cV?2
 !s100 ASM[`P[jRCoBL2E:GYIol1
-R6
+R8
 33
-R16
-!i10b 1
-R17
 R18
+!i10b 1
 R19
+R20
+R21
 !i113 1
-R11
-R12
+R13
+R14
 Etestbench
-Z20 w1686334349
-R1
-R2
-!i122 175
+Z22 w1687698848
 R3
-Z21 8C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl
-Z22 FC:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl
+R4
+!i122 406
+R5
+Z23 8C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl
+Z24 FC:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl
 l0
 L4 1
 V:E5kODO:B@^P_[E>Hm79c3
 !s100 1Dmil:d1:M7z1B@ONYhQ?1
-R6
+R8
 32
-Z23 !s110 1686334362
+R9
 !i10b 1
-Z24 !s108 1686334362.000000
+R10
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl|
 Z26 !s107 C:/Users/icaro/Documents/GitHub/round-robin/testbench.vhdl|
 !i113 1
 Z27 o-work work -2002 -explicit
-R12
-Abhv
-R1
-R2
+R14
+Abhvt
+R3
+R4
 Z28 DEx4 work 9 testbench 0 22 :E5kODO:B@^P_[E>Hm79c3
-!i122 175
-l50
-L6 103
-VCW4=;ZeEO59ZkZUKQXFg<1
-!s100 QJAA2Ubf>m0KgIZEY4g[i0
-R6
+!i122 406
+l57
+Z29 L6 147
+Z30 V`YU59;oh?3If2=>oHT^K00
+Z31 !s100 @ZC4;obT6;`Smmc^S8`aV0
+R8
 32
-R23
+R9
 !i10b 1
-R24
+R10
 R25
 R26
 !i113 1
 R27
-R12
+R14
+Abhv
+R3
+R4
+R28
+!i122 199
+l49
+L6 104
+VV4GAjMONj7zhN7T@6PbXz2
+!s100 n]^X:@1j^R>l:EJIQRb@B1
+R8
+32
+!s110 1687637841
+!i10b 1
+!s108 1687637841.000000
+R25
+R26
+!i113 1
+R27
+R14
+w1687637372
