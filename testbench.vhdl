@@ -128,21 +128,35 @@ begin
         esig_out <= "0101";
         wait for 100 ns;
         req0 <= '0';
+        wait for 100 ns;
 
-        --wait until sig3_in = "0101";
+        wait for 100 ns;
+        sig3_out <= "1110";
         wait for 100 ns;
         req3 <= '0';
 
         req1 <= '1';
-        --wait until sig1_in = "0101";
         wait for 100 ns;
         req1 <= '0';
 
         req2 <= '1';
         
-        --wait until sig2_in = "0101";
         wait for 100 ns;
         req2 <= '0';
+
+        req1 <= '1';
+        req2 <= '1';
+        wait for 100 ns;
+
+        req1 <= '0';
+        wait for 100 ns;
+        req0 <= '1';
+        wait for 100 ns;
+        req2 <= '0';
+        wait for 100 ns;
+        req0 <= '0';
+        wait for 100 ns;
+
 
         wait;
 
