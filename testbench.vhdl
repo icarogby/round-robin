@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity testbench is end;
 
 architecture bhvt of testbench is
-    constant clk_period: time := 100 ns;
+    constant clk_period: time := 40 ns;
     signal clk_count: integer := 0;
 
     signal clk: std_logic;
@@ -20,10 +20,10 @@ architecture bhvt of testbench is
     signal sig2_in: std_logic_vector(3 downto 0);
     signal sig3_in: std_logic_vector(3 downto 0);
 
-    signal sig0_out: std_logic_vector(3 downto 0) := "1001";
-    signal sig1_out: std_logic_vector(3 downto 0) := "1010";
-    signal sig2_out: std_logic_vector(3 downto 0) := "1011";
-    signal sig3_out: std_logic_vector(3 downto 0) := "1100";
+    signal sig0_out: std_logic_vector(3 downto 0) := "1111";
+    signal sig1_out: std_logic_vector(3 downto 0) := "1111";
+    signal sig2_out: std_logic_vector(3 downto 0) := "1111";
+    signal sig3_out: std_logic_vector(3 downto 0) := "1111";
 
     signal esig_in: std_logic_vector(3 downto 0);
     signal esig_out: std_logic_vector(3 downto 0) := "1111";
@@ -113,50 +113,42 @@ begin
         );
 
     process begin
-        req0 <= '0';
-        req1 <= '0';
-        req2 <= '0';
-        req3 <= '0';
+        req0 <= '1';
+        req1 <= '1';
+        req2 <= '1';
+        req3 <= '1';
 
-        wait for 200 ns;
+        wait for 100 ns;
+        req0 <= '0';
+        wait for 100 ns;
+
+        wait for 100 ns;
+        req1 <= '0';
+        wait for 100 ns;
+
+        wait for 100 ns;
+        req2 <= '0';
+        wait for 100 ns;
+
+        wait for 100 ns;
+        req3 <= '0';
+        wait for 100 ns;
+
+        req0 <= '1';
+        req2 <= '1';
+
+        wait for 100 ns;
+        req0 <= '0';
+        wait for 100 ns;
+        req2 <= '0';
 
         req0 <= '1';
         req3 <= '1';
 
-        wait until sig0_in = "1111";
-        wait for 100 ns;
-        esig_out <= "0101";
-        wait for 100 ns;
-        req0 <= '0';
-        wait for 100 ns;
-
-        wait for 100 ns;
-        sig3_out <= "1110";
         wait for 100 ns;
         req3 <= '0';
-
-        req1 <= '1';
-        wait for 100 ns;
-        req1 <= '0';
-
-        req2 <= '1';
-        
-        wait for 100 ns;
-        req2 <= '0';
-
-        req1 <= '1';
-        req2 <= '1';
-        wait for 100 ns;
-
-        req1 <= '0';
-        wait for 100 ns;
-        req0 <= '1';
-        wait for 100 ns;
-        req2 <= '0';
         wait for 100 ns;
         req0 <= '0';
-        wait for 100 ns;
-
 
         wait;
 

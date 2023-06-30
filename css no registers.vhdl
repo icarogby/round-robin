@@ -30,11 +30,7 @@ end css;
 
 architecture bhv of css is
     signal priority: std_logic_vector(1 downto 0);
-    signal priority_reg: std_logic_vector(1 downto 0);
     signal priority_plus_one: std_logic_vector(1 downto 0); -- 3 bits aqui
-    signal served_reg: std_logic_vector(3 downto 0);
-    signal mux: std_logic;
-    signal notmux: std_logic;
 
     signal served: std_logic_vector(3 downto 0);
     signal served_ord0, served_ord1, served_ord2, served_ord3: std_logic;
@@ -44,8 +40,6 @@ architecture bhv of css is
     signal req_ord0, req_ord1, req_ord2, req_ord3: std_logic;
 
 begin
-    -- requests enters
-
     -- requests priority ordenation top to down
     with priority select req_ord0 <=
         req0 when "00",
@@ -112,41 +106,31 @@ begin
 
     served <= served_desord0 & served_desord1 & served_desord2 & served_desord3;
 
-    -- served reg write process
-    served_reg_wr: process (clk, rst)
+    -- priority write process
+    priority_plus_one <= priority + 1;
+
+    reg: process (clk, rst)
 
     begin
         if (rst = '1') then
-            priority_reg <= "00";
-            served_reg <= "0000";
+            priority <= "00";
 
-        elsif ((clk'event and clk = '1') and (notmux = '1')) then
-            if (served_reg = "0000") then
-                served_reg <= served;
-                
-            else
-                priority_reg <= priority_plus_one;
-                served_reg <= served;
+        elsif (req0'event and req0 = '0') then
+            priority <= priority_plus_one(1 downto 0);
 
-            end if;
+        elsif (req1'event and req1 = '0') then
+            priority <= priority_plus_one(1 downto 0);
+
+        elsif (req2'event and req2 = '0') then
+            priority <= priority_plus_one(1 downto 0);
+
+        elsif (req3'event and req3 = '0') then
+            priority <= priority_plus_one(1 downto 0);
 
         end if;
 
-    end process served_reg_wr;
-
-    with served_reg select mux <=
-        '0'            when "0000",
-        served_desord0 when "1000",
-        served_desord1 when "0100",
-        served_desord2 when "0010",
-        served_desord3 when "0001",
-        'X'            when others;
-
-    notmux <= (not mux);
+    end process reg;
     
-    priority <= priority_reg;
-    priority_plus_one <= priority + 1;
-
     -- memory to core data
     with served select core0_in <=
         mem_out         when "1000",
